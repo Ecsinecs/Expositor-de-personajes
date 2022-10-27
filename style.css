@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Fuzzy+Bubbles:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgb(15, 0, 0) 0%,
+    rgb(30, 12, 0) 35%,
+    rgb(48, 16, 0) 100%
+  );
+  min-height: 100vh;
+}
+
+.showcaseContainer {
+  background: linear-gradient(
+    180deg,
+    rgb(39, 0, 0) 0%,
+    rgb(55, 17, 0) 35%,
+    rgb(93, 31, 0) 100%
+  );
+  width: 90%;
+  max-width: 382px;
+  margin: 1.5rem auto;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 123, 0, 0.622);
+  box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.547);
+}
+
+/* Información que se muestra */
+
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.showcaseImg {
+  display: none;
+  width: 100%;
+  max-height: 1000px;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 1rem;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0));
+  mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0));
+}
+
+.phoneShowcaseImg {
+  width: 100%;
+  max-height: 700px;
+  border-radius: 23px 23px 0 0;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0));
+  mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0));
+}
+
+.showcaseTitle {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 14vw;
+  color: rgb(255, 252, 251);
+  text-shadow: 2px 2px 0px rgb(195, 118, 70);
+}
+
+.showcaseSubtitle {
+  font-family: "Fuzzy Bubbles", cursive;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 0.5rem;
+  font-size: 4vw;
+  color: rgb(255, 252, 251);
+  text-shadow: 2px 2px 0px rgba(195, 118, 70, 0.679);
+}
+
+/* Selección */
+
+.selectorContainer {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.selectorButton {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.selectorImg {
+  width: 100%;
+  border: solid 1px rgba(255, 123, 0, 0.335);
+  box-shadow: 0px 0px 5px rgba(255, 123, 0, 0.335);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.selectorImg:hover {
+  width: 110%;
+  box-shadow: 0px 0px 15px rgb(255, 162, 75);
+  border: solid 1px rgba(255, 167, 85, 0.85);
+}
+
+/* Breakpoints */
+
+@media(min-width:425px) {
+
+    .showcaseTitle {
+        font-size: 58px;
+    }
+
+    .showcaseSubtitle {
+        font-size: 18px;
+    }
+
+}
+
+@media(min-width:768px) {
+
+    body {
+        background: linear-gradient(
+            180deg,
+            rgb(15, 0, 0) 0%,
+            rgb(30, 12, 0) 35%,
+            rgb(71, 24, 0) 100%
+          );
+    }
+
+    .phoneShowcaseImg {
+        display: none;
+    }
+
+    .showcaseImg {
+        display: block;
+        max-height: 675px;
+    }
+
+    .showcaseContainer {
+        max-width: 1286px;
+    }
+
+    .selectorContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .showcase {
+        margin-bottom: 1rem;
+    }
+
+    .selectorImg:hover {
+        width: 105%;
+    }
+}

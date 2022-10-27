@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "img": "./assets/rx.jpg",
+    "phoneImg": "./assets/rx phone.jpg",
+    "title": "Xayah & Rakan",
+    "description": "Xayah Arcana y Rakan Arcana"
+  },
+  {
+    "id": 2,
+    "img": "./assets/heca.jpg",
+    "phoneImg": "./assets/heca phone.jpg",
+    "title": "Hecarim",
+    "description": "Hecarim Arcana"
+  },
+  {
+    "id": 3,
+    "img": "./assets/ahri.jpg",
+    "phoneImg": "./assets/ahri phone.jpg",
+    "title": "Ahri",
+    "description": "Ahri Arcana"
+  },
+  {
+    "id": 4,
+    "img": "./assets/xera.jpg",
+    "phoneImg": "./assets/xera phone.jpg",
+    "title": "Xerath",
+    "description": "Xerath Arcana"
+  },
+  {
+    "id": 5,
+    "img": "./assets/camille.jpg",
+    "phoneImg": "./assets/camille phone.jpg",
+    "title": "Camille",
+    "description": "Camille Arcana"
+  },
+  {
+    "id": 6,
+    "img": "./assets/tham.jpg",
+    "phoneImg": "./assets/tham phone.jpg",
+    "title": "Tham Kench",
+    "description": "Tham Kench Arcana"
+  },
+  {
+    "id": 7,
+    "img": "./assets/ryze.jpg",
+    "phoneImg": "./assets/ryze phone.jpg",
+    "title": "Arroz",
+    "description": "Ryze Arcana"
+  },
+  {
+    "id": 8,
+    "img": "./assets/lucian.jpg",
+    "phoneImg": "./assets/lucian phone.jpg",
+    "title": "Lucian",
+    "description": "Lucian Arcana"
+  }
+]
